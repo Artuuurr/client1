@@ -18,7 +18,7 @@ export default function AuthForm({
 	const [confirmPassword, setConfirmPassword] = useState('')
 	const [error, setError] = useState('')
 
-	const handleSubmit = async e => {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		setError('')
 
@@ -66,7 +66,7 @@ export default function AuthForm({
 				onClose()
 				const data = await response.json()
 				onSuccess(name, data.token)
-			} catch (err) {
+			} catch (err: any) {
 				setError(err.message)
 			}
 		} else {
@@ -85,7 +85,7 @@ export default function AuthForm({
 				onClose()
 				alert('Вход выполнен успешно!')
 				onSuccess(data.name, data.token)
-			} catch (err) {
+			} catch (err: any) {
 				setError(err.message)
 			}
 		}

@@ -1,7 +1,6 @@
-import React from 'react'
 import { concerts } from '../components/conserts'
 import { Link } from 'react-router-dom'
-import TicketBookingWidget from '../components/buyTicet'
+// import TicketBookingWidget from '../components/buyTicet'
 
 const ConcertsPage = () => {
 	return (
@@ -33,7 +32,7 @@ const ConcertsPage = () => {
 					))}
 				</ul>
 			</div>
-			<TicketBookingWidget />
+			{/* <TicketBookingWidget /> */}
 		</>
 	)
 }
