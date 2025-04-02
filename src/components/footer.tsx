@@ -14,13 +14,13 @@ const Footer = () => {
 				>
 					часто задаваемые вопросы
 				</a>
-				<a class='en_mail' href='mailTo:tickets@invmail.ru' title=''>
+				<a className='en_mail' href='mailTo:tickets@invmail.ru' title=''>
 					tickets@invmail.ru
 				</a>
 				<br />
 
 				<p>По&nbsp;организационным и&nbsp;общим вопросам:</p>
-				<a class='en_phone' href='tel:+74952129294' title=''>
+				<a className='en_phone' href='tel:+74952129294' title=''>
 					+7 495 212-92-94
 				</a>
 				<a href='mAIltO:event@anacondaz.ru' title=''>
